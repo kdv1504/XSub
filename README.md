@@ -11,7 +11,7 @@ This repository contains the code to extend the results of the [Explanation-Driv
 Clone the repo:
 
 ```
-git clone https://github.com/xsub.git
+git clone https://github.com/xsub.git](https://github.com/kdv1504/XSub.git
 ```
 
 Create a conda environment and activate it:
