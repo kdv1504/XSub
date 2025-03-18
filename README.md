@@ -48,6 +48,7 @@ Running the [xsub.py](xsub.py) file should give you the results of the attack on
 ```
 python3 xsub.py
 ```
+[xsub_backdoor.py](xsub_backdoor.py) will be updated in the future.
 Within [xsub.py](xsub.py), there are lines of code you can modify to change the hyperparameters of the attack. Note that the code in this repository is most suitable for attacks using only 1 feature (i.e., $K=1$). Attacks with more features will be updated soon. 
 
 The [config.py](utils/config.py) file can also be modified if you need to:
