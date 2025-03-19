@@ -21,9 +21,11 @@ conda env create -f environment.yml
 conda activate xsub
 ```
 
-### Downloading and preparing data 
+## Downloading and preparing data 
 
-This repository includes a rearranged version of the [Breast Ultrasound Images Dataset](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/data) as an example. When working with any other dataset, make sure dataset is stored in the following order:
+The code in this repository was written to work with the [Breast Ultrasound Images Dataset](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/data) as an example. You can download the data directly from the kaggle site, or from [Google Drive](https://drive.google.com/drive/folders/1oXBbcrzAxSqokRGvyruX98bcjnlyTmOf?usp=drive_link). Note that the dataset from Kaggle includes both the original images and their corresponding masks. In the Drive link, you can find a "cleaned" version of the dataset where only the original images are retained. This dataset is stored as ```breast_ultrasound```. You can find the dataset with the masks in ```breast_ultrasound_ori```.
+
+When working with any other dataset, make sure dataset is stored in the following order:
 ```
 data #root data directory
 |
@@ -42,6 +44,9 @@ data #root data directory
     ...
 ```
 The [dataprep.py](dataprep.py) file contains code to prepare the data. The code has been written to be as general and applicable to as many datasets, but you can modify this file to suit your own needs and the specificity of your datasets. 
+
+### Setting up classifier
+You can use [this pretrained model](https://drive.google.com/drive/folders/1Iq29jV_vktPM2BNEEi98BM7YzOKZSnUE?usp=drive_link) to classify the Breast Ultrasound Images dataset. Remember to put the downloaded folder within the ```saved``` directory for the code to work.  
 
 ## Running the XSub code 
 Running the [xsub.py](xsub.py) file should give you the results of the attack on a given dataset:
