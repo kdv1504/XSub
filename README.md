@@ -27,7 +27,7 @@ The code in this repository was written to work with the [Breast Ultrasound Imag
 
 When working with any other dataset, make sure dataset is stored in the following order:
 ```
-data #root data directory
+dataset_name
 |
 |__ class_0 
     |__ image_0
