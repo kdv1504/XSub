@@ -25,23 +25,26 @@ conda activate xsub
 
 The code in this repository was written to work with the [Breast Ultrasound Images Dataset](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/data) as an example. You can download the data directly from the kaggle site, or from [Google Drive](https://drive.google.com/drive/folders/1oXBbcrzAxSqokRGvyruX98bcjnlyTmOf?usp=drive_link). Note that the dataset from Kaggle includes both the original images and their corresponding masks. In the Drive link, you can find a "cleaned" version of the dataset where only the original images are retained. This dataset is stored as ```breast_ultrasound```. You can find the dataset with the masks in ```breast_ultrasound_ori```.
 
-When working with any other dataset, make sure dataset is stored in the following order:
+When working with any other dataset, make sure the dataset is stored in the following order:
 ```
-dataset_name
+data #root data directory
 |
-|__ class_0 
-    |__ image_0
-    |__ image_1
+|__
+    dataset_name
+    |
+    |__ class_0 
+        |__ image_0
+        |__ image_1
+        ...
+    |__ class_1
+        |__ image_0
+        |__ image_1
+        ...
     ...
-|__ class_1
-    |__ image_0
-    |__ image_1
-    ...
-...
-|__ class_n
-    |__ image_0
-    |__ image_1
-    ...
+    |__ class_n
+        |__ image_0
+        |__ image_1
+        ...
 ```
 The [dataprep.py](dataprep.py) file contains code to prepare the data. The code has been written to be as general and applicable to as many datasets, but you can modify this file to suit your own needs and the specificity of your datasets. 
 
